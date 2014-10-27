@@ -12,4 +12,4 @@ oh-my-zsh
 pod插件是使用以下命令获取的
 >⊙mkdir~/.oh-my-zsh-custom/plugins/pod  
 >
->⊙pod--completion-script > ~/.oh-my-zshr-custom/plugins/pod/_pod
+>⊙pod--completion-script > ~/.oh-my-zsh-custom/plugins/pod/_pod
