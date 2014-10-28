@@ -182,4 +182,4 @@ zle -N backward-delete-char check-cmd-backward-delete-char
 #}}}
 
 alias ll="ls -al"
-
+alias .='pwd'
