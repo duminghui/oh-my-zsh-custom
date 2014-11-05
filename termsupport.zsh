@@ -15,6 +15,7 @@ function title {
 }
 
 ZSH_THEME_TERM_TAB_TITLE_IDLE="%15<..<%~%<<" #15 char left truncated PWD
+#修改了下面这个地方，不显示%n%m:
 ZSH_THEME_TERM_TITLE_IDLE="%~"
 
 #Appears when you have the prompt
