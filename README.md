@@ -10,6 +10,6 @@ oh-my-zsh
 自定义的pod补全
 ------------
 pod插件是使用以下命令获取的
->⊙mkdir~/.oh-my-zsh-custom/plugins/pod  
+>⊙mkdir~/.oh-my-zsh-custom/plugins/pod
 >
 >⊙pod--completion-script > ~/.oh-my-zsh-custom/plugins/pod/_pod

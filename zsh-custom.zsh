@@ -183,3 +183,6 @@ zle -N backward-delete-char check-cmd-backward-delete-char
 
 alias ll="ls -al"
 alias .='pwd'
+#export LC_ALL=zh_US.UTF-8
+export LANG=zh_CN.UTF-8
+export LC_CTYPE=zh_CN.UTF-8
