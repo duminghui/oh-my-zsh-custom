@@ -2,7 +2,6 @@
 #zsh custom
 #-------------------------------------
 #brew安装zsh-completions
-#然后在.zshrc-my中添加
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
