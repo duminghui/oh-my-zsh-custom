@@ -5,6 +5,10 @@
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
+#修改了下面这个地方，标题栏不显示%n%m:
+#ZSH_THEME_TERM_TITLE_IDLE="%n@%m: %~"
+ZSH_THEME_TERM_TITLE_IDLE="%~"
+
 #关于历史纪录的配置 {{{
 #历史纪录条目数量
 export HISTSIZE=10000
