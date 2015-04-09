@@ -184,7 +184,7 @@ zle -N self-insert check-cmd-self-insert
 zle -N backward-delete-char check-cmd-backward-delete-char
 #}}}
 
-alias ll="ls -al"
+alias ll="ls -alT"
 alias .='pwd'
 #export LC_ALL=zh_US.UTF-8
 export LANG=zh_CN.UTF-8
