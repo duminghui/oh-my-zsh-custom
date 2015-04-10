@@ -186,6 +186,7 @@ zle -N backward-delete-char check-cmd-backward-delete-char
 
 alias ll="ls -AlTh"
 alias .='pwd'
+alias go_alcatraz_store='cd /Users/dumh/Library/Application\ Support/Alcatraz/Plug-ins'
 #export LC_ALL=zh_US.UTF-8
 export LANG=zh_CN.UTF-8
 export LC_CTYPE=zh_CN.UTF-8
