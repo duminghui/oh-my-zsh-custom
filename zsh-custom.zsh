@@ -185,6 +185,7 @@ zle -N backward-delete-char check-cmd-backward-delete-char
 #}}}
 
 alias ll="ls -AlTh"
+alias llrt="ll -rt"
 alias .='pwd'
 alias 2_alcatraz_store='cd /Users/dumh/Library/Application\ Support/Alcatraz/Plug-ins'
 alias 2_xcodeplugins_store='cd /Users/dumh/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins'
