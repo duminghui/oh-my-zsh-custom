@@ -143,14 +143,14 @@ case "$words[2]" in
         case "$words[4]" in
           *) # pod lib lint
             _options=(
+              "--allow-warnings:Lint validates even if warnings are present"
               "--help:Show help banner of specified command"
               "--no-ansi:Show output without ANSI codes"
               "--no-clean:Lint leaves the build directory intact for inspection"
               "--no-subspecs:Lint skips validation of subspecs"
-              "--only-errors:Lint validates even if warnings are present"
               "--quick:Lint skips checks that would require to download and build the spec"
               "--silent:Show nothing"
-              "--sources=https://github.com/artsy/Specs:The sources to pull dependant pods from (defaults to https://github.com/CocoaPods/Specs.git)"
+              "--sources=https://github.com/artsy/Specs:The sources from which to pull dependant pods (defaults to https://github.com/CocoaPods/Specs.git). Multiple sources must be comma-delimited."
               "--subspec=NAME:Lint validates only the given subspec"
               "--verbose:Show more debugging information"
             )
@@ -278,19 +278,6 @@ case "$words[2]" in
       ;;
     esac
   ;;
-  push)
-    case "$words[3]" in
-      *) # pod push
-        _options=(
-          "--help:Show help banner of specified command"
-          "--no-ansi:Show output without ANSI codes"
-          "--silent:Show nothing"
-          "--verbose:Show more debugging information"
-        )
-        _describe -t options "pod push options" _options
-      ;;
-    esac
-  ;;
   repo)
     case "$words[3]" in
       add)
@@ -405,6 +392,7 @@ case "$words[2]" in
           "--ios:Restricts the search to Pods supported on iOS"
           "--no-ansi:Show output without ANSI codes"
           "--osx:Restricts the search to Pods supported on OS X"
+          "--regex:Interpret the \`QUERY\` as a regular expression"
           "--stats:Show additional stats (like GitHub watchers and forks)"
           "--verbose:Show more debugging information"
           "--web:Searches on cocoapods.org"
@@ -435,6 +423,7 @@ case "$words[2]" in
             _options=(
               "--help:Show help banner of specified command"
               "--no-ansi:Show output without ANSI codes"
+              "--regex:Interpret the \`QUERY\` as a regular expression"
               "--show-all:Pick from all versions of the given podspec"
               "--silent:Show nothing"
               "--verbose:Show more debugging information"
@@ -462,7 +451,8 @@ case "$words[2]" in
             _options=(
               "--help:Show help banner of specified command"
               "--no-ansi:Show output without ANSI codes"
-              "--show-all:Pick which spec to edit from all availableversions of the given podspec"
+              "--regex:Interpret the \`QUERY\` as a regular expression"
+              "--show-all:Pick from all versions of the given podspec"
               "--silent:Show nothing"
               "--verbose:Show more debugging information"
             )
@@ -474,14 +464,14 @@ case "$words[2]" in
         case "$words[4]" in
           *) # pod spec lint
             _options=(
+              "--allow-warnings:Lint validates even if warnings are present"
               "--help:Show help banner of specified command"
               "--no-ansi:Show output without ANSI codes"
               "--no-clean:Lint leaves the build directory intact for inspection"
               "--no-subspecs:Lint skips validation of subspecs"
-              "--only-errors:Lint validates even if warnings are present"
               "--quick:Lint skips checks that would require to download and build the spec"
               "--silent:Show nothing"
-              "--sources=https://github.com/artsy/Specs:The sources to pull dependant pods from (defaults to https://github.com/CocoaPods/Specs.git)"
+              "--sources=https://github.com/artsy/Specs:The sources from which to pull dependant pods (defaults to https://github.com/CocoaPods/Specs.git). Multiple sources must be comma-delimited."
               "--subspec=NAME:Lint validates only the given subspec"
               "--verbose:Show more debugging information"
             )
@@ -495,6 +485,7 @@ case "$words[2]" in
             _options=(
               "--help:Show help banner of specified command"
               "--no-ansi:Show output without ANSI codes"
+              "--regex:Interpret the \`QUERY\` as a regular expression"
               "--show-all:Print all versions of the given podspec"
               "--silent:Show nothing"
               "--verbose:Show more debugging information"
@@ -654,7 +645,6 @@ case "$words[2]" in
       "list:List pods"
       "outdated:Show outdated project dependencies"
       "plugins:Show available CocoaPods plugins"
-      "push:Temporary alias for the \`pod repo push\` command"
       "repo:Manage spec-repositories"
       "search:Searches for pods"
       "setup:Setup the CocoaPods environment"
