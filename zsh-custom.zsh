@@ -192,3 +192,12 @@ alias 2_xcodeplugins_store='cd ~/Library/Application\ Support/Developer/Shared/X
 #export LC_ALL=zh_US.UTF-8
 export LANG=zh_CN.UTF-8
 export LC_CTYPE=zh_CN.UTF-8
+#用于vim YCM 不配置会使vim启动报错
+#export DYLD_FORCE_FLAT_NAMESPACE=1
+#alias vim='DYLD_FORCE_FLAT_NAMESPACE=1 vim'
+#alias vimdiff='vim'
+#alias view='vim'
+#alias rvim='vim'
+#alias rview='vim'
+#alias ex='vim'
+#alias vi='vim'
