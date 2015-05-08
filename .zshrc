@@ -54,13 +54,13 @@ source $ZSH/oh-my-zsh.sh
 
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 export GRADLE_HOME=/usr/local/opt/gradle
-export PATH=$PATH:$GRADLE_HOME/bin
+export PATH=:$GRADLE_HOME/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk.latest/Contents/Home
-export PATH=$PATH/$JAVA_HOME/bin
+export PATH=$JAVA_HOME/bin:$PATH
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
-export PATH=$PATH:$GROOVY_HOME/bin
+export PATH=$GROOVY_HOME/bin:$PATH
 
 export PATH=/usr/local/bin:$PATH
 #export PATH="/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/android-sdk/tools:/usr/local/opt/android-sdk/platform-tools:/usr/local/opt/maven/libexec/bin:/usr/local/opt/gradle/bin:/Library/Java/JavaVirtualMachines/jdk.latest/Contents/Home/bin"
