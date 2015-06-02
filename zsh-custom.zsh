@@ -200,4 +200,4 @@ export LC_CTYPE=zh_CN.UTF-8
 #alias rvim='vim'
 #alias rview='vim'
 #alias ex='vim'
-#alias vi='vim'
+alias vi='vim'
