@@ -55,14 +55,16 @@ source $ZSH/oh-my-zsh.sh
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+export NDK_HOME=/usr/local/opt/android-ndk
+export PATH=$NDK_HOME/bin:$PATH
 export GRADLE_HOME=/usr/local/opt/gradle
-export PATH=:$GRADLE_HOME/bin:$PATH
+export PATH=$GRADLE_HOME/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk.latest/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export PATH=$GROOVY_HOME/bin:$PATH
-
 export PATH=/usr/local/bin:$PATH
+export MONO_GAC_PREFIX="/usr/local"
 #export PATH="/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/android-sdk/tools:/usr/local/opt/android-sdk/platform-tools:/usr/local/opt/maven/libexec/bin:/usr/local/opt/gradle/bin:/Library/Java/JavaVirtualMachines/jdk.latest/Contents/Home/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
