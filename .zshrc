@@ -95,4 +95,6 @@ export MONO_GAC_PREFIX="/usr/local"
 
 
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[ -s "/Users/dumh/.dnx/dnvm/dnvm.sh" ] && . "/Users/dumh/.dnx/dnvm/dnvm.sh" # Load dnvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
