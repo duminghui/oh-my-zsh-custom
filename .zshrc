@@ -46,7 +46,7 @@ ZSH_CUSTOM=~/.oh-my-zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojum brew brew-cask gem git gradle osx pod ruby rvm xcode)
+plugins=(autojum brew brew-cask gem git gradle osx pod ruby xcode)
 
 source $ZSH/oh-my-zsh.sh
 
