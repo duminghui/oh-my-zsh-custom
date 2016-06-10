@@ -17,7 +17,8 @@ pod--completion-script > ~/.oh-my-zsh-custom/plugins/pod/_pod
 ```
 使用方法
 ==============
-在~/.zshrc中添加以下内容
+将.zshrc软链接至~目录下
+在~目录下输入命令
 ```
-source ~/.oh-my-zsh-custom/_zshrc
+ln -svhi ~/.oh-my-zsh-custom/.zshrc .zshrc
 ```
