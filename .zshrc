@@ -54,8 +54,9 @@ source $ZSH/oh-my-zsh.sh
 
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_NDK=/usr/local/opt/android-ndk
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
-export NDK_HOME=/usr/local/opt/android-ndk
+export NDK_HOME=$ANDROID_NDK
 export PATH=$NDK_HOME/bin:$PATH
 export GRADLE_HOME=/usr/local/opt/gradle
 export PATH=$GRADLE_HOME/bin:$PATH
