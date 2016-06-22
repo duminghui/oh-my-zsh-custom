@@ -46,7 +46,7 @@ ZSH_CUSTOM=~/.oh-my-zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojum brew brew-cask gem git gradle osx pod ruby xcode)
+plugins=(autojum brew brew-cask gem git gradle osx pod ruby xcode tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,7 +56,7 @@ source $ZSH/oh-my-zsh.sh
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 export NDK_HOME=/usr/local/opt/android-ndk
-# export ANDROID_NDK=$NDK_HOME
+export ANDROID_NDK=$NDK_HOME
 export PATH=$NDK_HOME/bin:$PATH
 export GRADLE_HOME=/usr/local/opt/gradle
 export PATH=$GRADLE_HOME/bin:$PATH
@@ -66,6 +66,8 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export PATH=$GROOVY_HOME/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export MONO_GAC_PREFIX="/usr/local"
+export EDITOR=vim
+# export NO_BUCKD=1
 #export PATH="/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/android-sdk/tools:/usr/local/opt/android-sdk/platform-tools:/usr/local/opt/maven/libexec/bin:/usr/local/opt/gradle/bin:/Library/Java/JavaVirtualMachines/jdk.latest/Contents/Home/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -97,5 +99,12 @@ export MONO_GAC_PREFIX="/usr/local"
 
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [ -s "/Users/dumh/.dnx/dnvm/dnvm.sh" ] && . "/Users/dumh/.dnx/dnvm/dnvm.sh" # Load dnvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/dumh/.sdkman"
+[[ -s "/Users/dumh/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/dumh/.sdkman/bin/sdkman-init.sh"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+alias gem_g_outdated='rvm @global do gem outdated'
+alias gem_g_update='rvm @global do gem update'
+alias gem_g_cleanup='rvm @global do gem cleanup'
